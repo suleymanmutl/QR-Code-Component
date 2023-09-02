@@ -1,0 +1,77 @@
+/* Import Font Family */
+@import url("https://fonts.google.com/specimen/Outfit");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Light-gray);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--Dark-blue);
+  margin-bottom: 17px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Grayish-blue);
+}
+
+/* QR Section */
+.qr-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.qr-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--White);
+  width: 300px;
+  padding: 15px;
+  border-radius: 20px;
+  gap: 12px;
+}
+
+.qr-menu .qr-info {
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.qr-menu img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
